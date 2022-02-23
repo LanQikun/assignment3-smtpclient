@@ -44,7 +44,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     send(rcptTo)
 
     # Send DATA command and handle server response.
-    data = "test\r\n"
+    data = "DATA\r\n"
     send(data)
 
     # Send message data.
